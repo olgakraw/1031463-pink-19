@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Кравчук](https://up.htmlacademy.ru/adaptive/19/user/1031463).
-* Наставник: `Неизвестно`.
+* Наставник: `Кексобот`.
 
 ---
 
