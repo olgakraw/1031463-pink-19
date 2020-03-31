@@ -1,12 +1,556 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Pink</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.js" async></script>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <div class="main-nav__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+          </picture>
+
+
+
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened">
+
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+
+        <ul class="main-nav__list site-list">
+          <li>
+            <a class="site-list__item">Главная</a>
+          </li>
+          <li>
+            <a class="site-list__item site-list__item--active" href="photo.html">Фотографии</a>
+          </li>
+          <li>
+            <a class="site-list__item site-list__item--active" href="form.html">Конкурс</a>
+          </li>
+          <li>
+            <a class="site-list__item site-list__item--active" href="https://htmlacademy.ru/intensive/adaptive">HTML
+              Academy</a>
+          </li>
+
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+
+    <section class="page-main__background page-main__index">
+      <div class="app-download">
+        <div class="page-main__title-wrapper">
+          <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+        </div>
+        <div class="app-download__information">
+          <div class="app">
+            <a class="app-download__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+          </div>
+          <ul class="app-download__os">
+            <li class="app-download__os-ios">
+              <a href="https://www.apple.com/ru/ios/app-store/">
+                <img class="app-download__os-ios-image" src="img/logo-apple.svg" width="47" height="56" alt="iOS">
+              </a>
+            </li>
+            <li class="app-download__os-android">
+              <a href="https://play.google.com/store/apps?hl=ru">
+                <img class="app-download__os-android-image" src="img/logo-android.svg" width="43" height="47"
+                  alt="Android">
+              </a>
+            </li>
+            <li class="app-download__os-windows">
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                <img class="app-download__os-windows-image" src="img/logo-microsoft.svg" width="44" height="41"
+                  alt="Windows">
+              </a>
+            </li>
+          </ul>
+          <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages__intro-wrapper">
+        <p class="advantages__intro">Устали от серости мегаполиса?</p>
+        <p class="advantages__intro">Нам есть, что вам<br> предложить!</p>
+      </div>
+
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <p class="advantages__img advantages__img-desktop">
+            <img class="advantages__iphone-smiles" src="img/iphone-screen-1-desktop@1x.png" width="186" height="382"
+              alt="iphone-black-and-white">
+          </p>
+          <div class="advantages__text-wrapper">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </div>
+
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__img advantages__img-desktop">
+            <img class="advantages__iphone-smiles" src="img/iphone-screen-2-desktop@1x.png" width="186" height="382"
+              alt="iphone-pink">
+          </p>
+          <div class="advantages__text-wrapper">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </div>
+
+        </li>
+        <li class="advantages__item advantages__tablet-wrapper">
+          <p class="advantages__img">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+              <img class="advantages__iphone-smiles" src="img/iphone-screen.png" width="157" height="320"
+                alt="iphone-smiles">
+            </picture>
+
+          </p>
+          <div class="advantages__text-image-wrapper">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых
+            </p>
+          </div>
+        </li>
+
+      </ul>
+
+    </section>
+    <section class="effect">
+      <div class="effect__text">
+        <h2 class="effect-title">Эффект на 24 часа!</h2>
+        <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a class="effect__link" href="#">Узнать больше об исследовании</a>
+      </div>
+      <p class="effect__img effect__tablet">
+        <svg class="effect__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="238px" height="276px"
+          viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+          <path
+            d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+          <circle r="120" cx="149" cy="195" fill="none" stroke="#d22856" stroke-width="17"></circle>
+          <text class="effect__img-text" x="80" y="234">24</text>
+        </svg>
+
+      </p>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Мнения о приложении</h2>
+      <p class="feedback__icon">
+        <svg version="1.1" id="Layer_10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789"
+          enable-background="new 0 0 78.672 63.789" xml:space="preserve">
+          <g>
+            <path
+              d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z" />
+          </g>
+          <g>
+            <path
+              d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z" />
+          </g>
+        </svg>
+      </p>
+      <div class="feedback__slider">
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <p class="feedback__author">Николай Петров</p>
+        <p class="feedback__author-description">25 лет, водитель трамвая</p>
+      </div>
+
+      <button class="feedback__arrow feedback__arrow-left">
+        <svg version="1.1" id="Layer_11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719"
+          enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <path
+            d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z" />
+        </svg>
+      </button>
+
+      <button class="feedback__arrow feedback__arrow-right">
+        <svg version="1.1" id="Layer_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719"
+          enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <path
+            d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z" />
+        </svg>
+      </button>
+
+      <div class="feedback__toggle">
+
+        <input type="radio" class="feedback__radio" id="radio1" name="feedback-slider">
+
+        <label class="feedback__radio-new" for="radio1"></label>
+
+
+        <input type="radio" class="feedback__radio" name="feedback-slider" id="radio2" checked>
+
+        <label class="feedback__radio-new" for="radio2"></label>
+
+        <input type="radio" class="feedback__radio" name="feedback-slider" id="radio3">
+
+        <label class="feedback__radio-new" for="radio3"></label>
+      </div>
+    </section>
+
+
+    <section class="tariffs">
+      <div class="tariffs__wrapper">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariffs__item tariffs__item-general">
+          <div class="tariffs__caption-general">
+          </div>
+          <ul class="tariffs__options">
+            <li class="tariffs__options-item-general">
+              <div class="tariffs__options-name-general"> Розовый фильтр
+              </div>
+
+            </li>
+            <li class="tariffs__options-item-general">
+              <div class="tariffs__options-name-general">
+                Смайлики
+              </div>
+
+            </li>
+            <li class="tariffs__options-item-general">
+              <div class="tariffs__options-name-general">
+                Комментарии
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class="tariffs__item tariffs__base">
+          <div class="tariffs__caption">
+            <p class="tariffs__name tariffs__base-name">
+              База
+            </p>
+            <p class="tariffs__cost tariffs__base-cost">
+              1,99 USD
+            </p>
+          </div>
+          <ul class="tariffs__base-options tariffs__options">
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name"> Розовый фильтр
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-yes" version="1.0" id="Layer_13" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
+              </div>
+            </li>
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Смайлики
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-no" version="1.0" id="Layer_14" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="26px"
+                  viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path
+                    d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+                </svg>
+              </div>
+            </li>
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Комментарии
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-no" version="1.0" id="Layer_15" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="26px"
+                  viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path
+                    d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tariffs__item tariffs__standard">
+          <div class="tariffs__caption">
+            <p class="tariffs__name tariffs__standard-name">
+              Стандарт
+            </p>
+            <p class="tariffs__cost tariffs__standard-cost">
+              3,99 USD
+            </p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-hit-tablet.svg">
+              <img class="tariffs__hit" src="img/bg-hit.svg" width="74" height="73" alt="">
+            </picture>
+            <span class="tariffs__hit-text">Хит</span>
+          </div>
+          <ul class="tariffs__standard-options tariffs__options">
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Розовый фильтр
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-yes" version="1.0" id="Layer_16" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
+              </div>
+            </li>
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Смайлики
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-yes" version="1.0" id="Layer_17" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
+              </div>
+            </li>
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Комментарии
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-no" version="1.0" id="Layer_18" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="26px"
+                  viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path
+                    d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tariffs__item tariffs__unlim">
+          <div class="tariffs__caption">
+            <p class="tariffs__name tariffs__unlim-name">
+              Анлим
+            </p>
+            <p class="tariffs__cost tariffs__unlim-cost">
+              9,99 USD
+            </p>
+          </div>
+          <ul class="tariffs__unlim-options tariffs__options">
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Розовый фильтр
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-yes" version="1.0" id="Layer_19" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
+              </div>
+            </li>
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Смайлики
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-yes" version="1.0" id="Layer_20" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
+              </div>
+            </li>
+            <li class="tariffs__options-item">
+              <div class="tariffs__options-name">
+                Комментарии
+              </div>
+              <div class="tariffs__options-icon">
+                <svg class="tariffs__icon-yes" version="1.0" id="Layer_21" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tariffs__toggle">
+        <input type="radio" class="tariffs__radio" id="radio4" name="tariff-slider">
+        <label class="tariffs__radio-new" for="radio4"></label>
+        <input type="radio" class="tariffs__radio" name="tariff-slider" id="radio5" checked>
+        <label class="tariffs__radio-new" for="radio5"></label>
+        <input type="radio" class="tariffs__radio" name="tariff-slider" id="radio6">
+        <label class="tariffs__radio-new" for="radio6"></label>
+      </div>
+
+    </section>
+
+
+
+
+    <section class="contacts">
+
+      <h2 class="visually-hidden">
+        Контакты HTML Academy
+      </h2>
+
+
+      <p class="contacts__introduction">
+        Остались вопросы? Свяжитесь с нами!
+      </p>
+
+      <div class="contacts__wrapper">
+        <div class="contacts__item">
+          <p class="contacts__text contacts__text-phone">
+            Звоните:
+          </p>
+          <p class="contacts__value contacts__value-phone">
+            +7 (812) 555-66-66
+          </p>
+        </div>
+        <div class="contacts__item contacts__item-email">
+          <p class="contacts__text contacts__text-email">
+            Пишите:
+          </p>
+          <div class="contacts__value contacts__value-email">
+            <a class="contacts__email" href="#">
+              mail@htmlacademy.ru
+            </a>
+          </div>
+        </div>
+        <div class="contacts__item contacts__item-address">
+          <p class="contacts__text contacts__text-address">
+            Приезжайте в гости:
+          </p>
+          <p class="contacts__value contacts__value-address">
+            ул. Большая<br> Конюшенная, 19/8
+          </p>
+        </div>
+
+      </div>
+
+
+
+
+      <iframe class="contacts__google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.590183238402!2d30.32223200698719!3d59.9389422039375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1576940504747!5m2!1sru!2sru"
+        width="320" height="594" style="border:0;" allowfullscreen="">
+      </iframe>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"
+          width="320" height="645" alt="HTML Academy на карте, ул. Большая конюшенная, 19/8">
+      </picture>
+
+
+
+    </section>
+  </main>
+  <footer class="page-footer page-footer__index">
+    <a class="page-footer__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+      </picture>
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+
+        <li class="social__item">
+
+          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span>
+            <svg version="1.0" id="Layer_22" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
+              viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+                </g>
+              </g>
+            </svg>
+          </a>
+
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Facebook</span>
+            <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px"
+              viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+              <path
+                d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Youtube</span>
+            <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px"
+              viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+              <path
+                d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+          Academy</span>
+        <svg version="1.0" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
+          enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path
+            d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
+        </svg>
+      </a>
+    </div>
+
+  </footer>
+</body>
+
 </html>
