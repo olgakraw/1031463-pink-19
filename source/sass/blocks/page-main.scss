@@ -1,0 +1,161 @@
+.page-main__title {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+  padding-right: 20px;
+  padding-left: 20px;
+  //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+  margin-top: 90px;
+}
+
+.page-main__image {
+  display: flex;
+  //padding: 0;
+  //box-shadow: inset 0 0 0 1px rgb(100, 5, 252);
+}
+
+.page-main__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 462px;
+  //min-height: 237px;
+  //background-color: #283645;
+  background: url("../img/iphone-hand-mobile@1x.png") 95% 43%, url("../img/bg-back-mobile@1x.jpg");
+  //background-position: 95% 43%, contain;
+  background-color: #283645;
+  background-repeat: no-repeat;
+  background-size: auto, 100%;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/iphone-hand-mobile@2x.png") 95% 43% auto, url("../img/bg-back-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, 100%;
+  }
+}
+
+.page-main__photo {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.page-main__contest {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.page-main__title-wrapper {
+  margin-bottom: 315px;
+  //box-shadow: inset 0 0 0 10px rgb(30, 5, 252);
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__index {
+    background: url("../img/iphone-hand-tablet@1x.png") 50% 50%, url("../img/bg-back-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    //background-size: cover;
+    flex-direction: row;
+    //box-shadow: inset 0 0 0 10px rgb(231, 231, 235);
+    //margin-top: -120px;//
+    padding: 0;
+    margin: 0;
+    min-height: 729px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/iphone-hand-tablet@2x.png") 50% 50% auto, url("../img/bg-back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto, cover;
+    }
+  }
+
+  .page-main__image {
+    width: 660px;
+    height: 545px;
+  }
+
+  .page-main__photo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-main__contest {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-main__title {
+    font-size: 50px;
+    font-weight: 300;
+    //position: relative;
+  }
+
+  .page-main__title-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__index {
+    background: url("../img/iphone-hand-desktop@1x.png") 50% 50%, url("../img/bg-back-desktop@1x.jpg");
+    /*flex-direction: row;*/
+    justify-content: flex-start;
+    background-repeat: no-repeat;
+    background-size: contain auto;
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/iphone-hand-desktop@2x.png") 50% 50% auto, url("../img/bg-back-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: contain auto;
+    }
+  }
+
+  .page-main__photo {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: contain auto;
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: contain auto;
+      background-position: center;
+    }
+  }
+
+  .page-main__contest {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: contain auto;
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .page-main__title {
+    font-size: 50px;
+    font-weight: 300;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

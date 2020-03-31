@@ -1,0 +1,99 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -69px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 69px;
+  height: 69px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: -69px;
+  right: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    right: 18px;
+
+    width: 26px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #d22856;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,30 @@
+.page-footer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 284px;
+  justify-content: space-around;
+}
+
+.page-footer__index {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__index {
+    display: flex;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 127px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-height: 197px;
+  }
+}

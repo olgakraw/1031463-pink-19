@@ -1,0 +1,24 @@
+.copyright__text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #283645;
+}
+
+.copyright__link {
+  fill: #d4345f;
+}
+
+.copyright__link:hover path {
+  fill: #283645;
+}
+
+.copyright__link:active path {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}

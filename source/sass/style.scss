@@ -1,0 +1,34 @@
+@import "variables.scss";
+@import "font-face.scss";
+@import "visually-hidden.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/app-download.scss";
+@import "blocks/advantages.scss";
+@import "blocks/users-photos.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/effect.scss";
+@import "blocks/photo-download.scss";
+@import "blocks/contacts.scss";
+@import "blocks/feedback.scss";
+@import "blocks/tariffs.scss";
+@import "blocks/form.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
