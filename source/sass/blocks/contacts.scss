@@ -1,7 +1,7 @@
 .contacts__introduction {
   font-size: 24px;
   font-weight: 300;
-  color: #283645;
+  color: $dark;
   line-height: normal;
   text-align: center;
   padding-right: 45px;
@@ -11,7 +11,7 @@
 .contacts__text {
   font-size: 18px;
   font-weight: 700;
-  color: #283645;
+  color: $dark;
   line-height: normal;
   text-align: center;
   padding-bottom: 10px;
@@ -20,11 +20,11 @@
 
 .contacts__email {
   text-decoration: none;
-  color: #d22856;
+  color: $pink;
 }
 
 .contacts__email:hover {
-  color: #283645;
+  color: $dark;
   border-bottom: 2px solid;
 }
 
@@ -36,7 +36,7 @@
 .contacts__value {
   font-size: 24px;
   font-weight: 300;
-  color: #d22856;
+  color: $pink;
   line-height: normal;
   text-align: center;
   padding-right: 25px;

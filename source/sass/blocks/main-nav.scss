@@ -31,13 +31,13 @@
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
-  background-color: #d22856;
-  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+  background-color: $pink;
+  box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: #d22856;
-  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+  background-color: $pink;
+  box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 #$pink;
   opacity: 0.3;
 }
 
@@ -70,12 +70,12 @@
 
   &:hover::before,
   &:hover::after {
-    background-color: #d22856;
+    background-color: $pink;
   }
 
   &:active::before,
   &:active::after {
-    background-color: #d22856;
+    background-color: $pink;
     opacity: 0.3;
   }
 }

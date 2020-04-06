@@ -9,7 +9,7 @@
 }
 
 .social__link {
-  fill: #d22856;
+  fill: $pink;
   position: relative;
   //border: solid 3px #fefefe;
   //rgb(40, 54, 69, 0.1);
@@ -27,7 +27,7 @@
 }
 
 .social__link:hover::after {
-  border: solid 3px #283645;
+  border: solid 3px $dark;
 }
 
 .social__link:active::after {

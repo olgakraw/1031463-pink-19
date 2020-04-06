@@ -10,7 +10,7 @@
   font-weight: 400;
   text-align: center;
   line-height: 2.14;
-  color: #283645;
+  color: $dark;
   //margin-top: -230px;//
   padding-top: 50px;
   padding-left: 40px;
@@ -75,7 +75,7 @@
   font-weight: 700;
   font-style: normal;
   text-align: left;
-  color: #283645;
+  color: $dark;
   padding-right: 2px;
 }
 
@@ -84,7 +84,7 @@
   font-weight: 300;
   text-align: left;
   text-transform: uppercase;
-  color: #283645;
+  color: $dark;
 }
 
 .users-photos__text {
@@ -92,7 +92,7 @@
   font-weight: 400;
   text-align: left;
   line-height: 1.71;
-  color: #283645;
+  color: $dark;
 }
 
 .users-photos__likes {
@@ -100,12 +100,12 @@
   font-weight: 400;
   text-align: left;
   text-transform: uppercase;
-  color: #d22856;
+  color: $pink;
   padding-left: 20px;
 }
 
 .users-photos__likes-image {
-  fill: #d22856;
+  fill: $pink;
 }
 
 .users-photos__likes-wrapper {
