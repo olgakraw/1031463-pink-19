@@ -25,11 +25,11 @@
 }
 
 .site-list__item--active:hover {
-  color: #d22856;
+  color: $pink;
 }
 
 .site-list__item--active:active {
-  color: #d22856;
+  color: $pink;
   opacity: 0.3;
 }
 

@@ -1,5 +1,5 @@
 .app-download__information {
-  background-color: #283645;
+  background-color: $dark;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 .app-download__button:hover {
-  color: #d22856;
+  color: $pink;
   background: #ffffff;
 }
 

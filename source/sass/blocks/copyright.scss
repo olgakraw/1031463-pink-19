@@ -2,7 +2,7 @@
   font-size: 14px;
   font-weight: 400;
   text-align: left;
-  color: #283645;
+  color: $dark;
 }
 
 .copyright__link {
@@ -10,7 +10,7 @@
 }
 
 .copyright__link:hover path {
-  fill: #283645;
+  fill: $dark;
 }
 
 .copyright__link:active path {
