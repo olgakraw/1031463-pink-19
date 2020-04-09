@@ -17,7 +17,7 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--opened">
     <div class="main-nav__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
@@ -479,6 +479,17 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
+
+  var navHeader = document.querySelector('.page-header');
+
+  navHeader.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--opened')) {
+      navHeader.classList.add('page-header--opened');
+    } else {
+      navHeader.classList.remove('page-header--opened');
+    }
+  });
+
 </script>
 
 </body>

@@ -80,6 +80,10 @@
   }
 }
 
+.main-nav--opened {
+  background-color: $dark;
+}
+
 @media (max-width: $mobile-tablet-width-only) {
   .main-nav--closed .site-list__item {
     display: none;

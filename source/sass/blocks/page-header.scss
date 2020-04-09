@@ -1,11 +1,17 @@
 .page-header {
-  background-color: $dark;
+  background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0;
   margin: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.page-header--opened {
+  background-color: $dark;
 }
 
 .page-header__logo-wrapper {
