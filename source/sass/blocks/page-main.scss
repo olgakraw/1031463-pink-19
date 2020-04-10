@@ -67,6 +67,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main {
+    margin-top: -110px;
+    //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+  }
+
   .page-main__index {
     background: url("../img/iphone-hand-tablet@1x.png") 50% 50%, url("../img/bg-back-tablet@1x.jpg");
     background-position: center;
