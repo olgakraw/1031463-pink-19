@@ -38,7 +38,7 @@
   background-color: #f2f2f2;
   max-width: 232px;
   margin: 0 auto;
-  box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
+  //box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
 }
 
 .users-photos__author-name-wrapper {
@@ -108,7 +108,7 @@
 
 .users-photos__likes-image {
   fill: $pink;
-  box-shadow: inset 0 0 0 4px rgb(71, 10, 150);
+  //box-shadow: inset 0 0 0 4px rgb(71, 10, 150);
 }
 
 .users-photos__likes-wrapper {
@@ -116,7 +116,7 @@
   align-items: center;
   //margin-top: auto;
   //margin-bottom: 30px;
-  box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+  //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
 }
 
 @media (min-width: $tablet-width) {
@@ -143,7 +143,7 @@
   .users-photos__item {
     //margin-bottom: 20px;
     padding: 0 10px;
-    box-shadow: inset 0 0 0 5px rgb(252, 104, 5);
+    //box-shadow: inset 0 0 0 5px rgb(252, 104, 5);
   }
 }
 
