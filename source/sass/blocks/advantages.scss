@@ -33,8 +33,8 @@
   position: relative;
 }
 
-.advantages__list:before{
-  content: '';
+.advantages__list::before {
+  content: "";
   position: absolute;
   top: -30px;
   width: 0;

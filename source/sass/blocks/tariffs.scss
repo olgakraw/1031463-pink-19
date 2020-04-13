@@ -8,8 +8,8 @@
   //box-shadow: inset 0 0 0 6px rgb(252, 5, 17);
 }
 
-.tariffs:before {
-  content: '';
+.tariffs::before {
+  content: "";
   position: absolute;
   top: -30px;
   width: 0;
