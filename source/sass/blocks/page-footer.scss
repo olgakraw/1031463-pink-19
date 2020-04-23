@@ -11,6 +11,24 @@
   display: none;
 }
 
+.page-footer__logo-image {
+  fill: #283645;
+}
+
+.page-footer__logo-image:hover {
+  fill: $pink;
+}
+
+.page-footer__logo-image:active {
+  fill:#283645;
+  opacity: 0.3;
+}
+
+
+.page-footer__logo-image--desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__index {
     display: flex;
@@ -26,5 +44,13 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     min-height: 197px;
+  }
+
+  .page-footer__logo-image--desktop {
+    display: inline-block;
+  }
+
+  .page-footer__logo-image--mobile {
+    display: none;
   }
 }
