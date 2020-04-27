@@ -19,23 +19,27 @@
   content: "";
   position: absolute;
   top: -17px;
-  left: -19px;
+  left: -20px;
   border-radius: 50%;
-  border: solid 3px #fefefe;
+  border: solid 3px $dark;
+  opacity: 0.1;
+
   width: 45px;
   height: 45px;
 }
 
 .social__link:hover::after {
-  border: solid 3px $dark;
+  //border: solid 3px $dark;
+  opacity: 1;
 }
 
 .social__link:active::after {
-  border: solid 3px #fefefe;
+  //border: solid 3px #fefefe;
+  opacity: 0.3;
 }
 
-.social__link:active path {
-  fill: rgba(210, 40, 86, 0.3);
+.social__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

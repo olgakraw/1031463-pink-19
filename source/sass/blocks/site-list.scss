@@ -41,6 +41,10 @@
     box-shadow: none;
   }
 
+  .site-list__item--current {
+    border-bottom: solid 2px;
+  }
+
   .site-list {
     flex-direction: row;
     justify-content: space-around;

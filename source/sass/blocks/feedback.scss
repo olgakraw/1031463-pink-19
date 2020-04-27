@@ -161,7 +161,7 @@
   .feedback__icon {
     display: block;
     text-align: center;
-    fill: #efefef;
+    //fill: #efefef;
   }
 
   .feedback__toggle {
@@ -172,8 +172,8 @@
     display: block;
     position: absolute;
     top: 140px;
-    width: 22px;
-    height: 42px;
+    // width: 22px;
+    // height: 42px;
     object-fit: contain;
     opacity: 0.3;
     color: $dark;
