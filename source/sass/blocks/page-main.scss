@@ -8,7 +8,7 @@
   text-align: center;
   font-weight: 300;
   font-size: 24px;
-  line-height: normal;
+  line-height: 1.2;
   padding-right: 20px;
   padding-left: 20px;
   //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
@@ -28,14 +28,14 @@
   min-height: 462px;
   //min-height: 237px;
   //background-color: $dark;
-  background: url("../img/iphone-hand-mobile@1x.png") 0% 39%, url("../img/bg-back-mobile@1x.jpg");
+  background: url("../img/iphone-hand-mobile@1x.png") 0% 40%, url("../img/bg-back-mobile@1x.jpg");
   //background-position: 95% 43%, contain;
   background-color: $dark;
   background-repeat: no-repeat;
   background-size: auto, 100%;
 
   @media (min-resolution: $retina-dppx) {
-    background: url("../img/iphone-hand-mobile@2x.png") 95% 43% auto, url("../img/bg-back-mobile@2x.jpg");
+    background: url("../img/iphone-hand-mobile@2x.png") 0% 40%, url("../img/bg-back-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-size: auto, 100%;
   }
