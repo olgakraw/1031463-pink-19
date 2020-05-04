@@ -18,8 +18,30 @@
   opacity: 0.3;
 }
 
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-right: 5px;
+    padding-top: 22px;
+    display: flex;
+  }
+
+  .copyright__text {
+    padding-right: 12px;
+    //box-shadow: inset 0 0 0 1px rgb(231, 9, 9);
+  }
+}
+
 @media (min-width: $desktop-width) {
   .copyright__text {
     font-size: 18px;
+    padding-top: 0;
+  }
+
+  .copyright {
+    padding-right: 5px;
+    padding-top: 22px;
+    display: flex;
+    align-items: stretch;
+    //box-shadow: inset 0 0 0 1px rgb(231, 9, 9);
   }
 }

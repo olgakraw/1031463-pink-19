@@ -47,10 +47,11 @@
 
   .site-list {
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 130px;
-    padding-right: 89px;
+    justify-content: space-between;
+    padding-left: 175px;
+    padding-right: 0;
     padding-top: 20px;
+    //box-shadow: inset 0 0 0 2px rgb(4, 84, 204);
   }
 
   .site-list__item--active:active {
