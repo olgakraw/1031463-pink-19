@@ -45,7 +45,7 @@
   background-color: #f2f2f2;
   max-width: 232px;
   margin: 0 auto;
-  box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
+  //box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
 }
 
 .users-photos__author-name-wrapper {
@@ -54,7 +54,7 @@
   align-items: center;
   padding-bottom: 0;
   margin-bottom: 0;
-  box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
+  //box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
 }
 
 .users-photos__list {
@@ -72,7 +72,7 @@
 .users-photos__item {
   margin-bottom: 20px;
   padding: 0 20px;
-  box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
+  //box-shadow: inset 0 0 0 4px rgb(252, 5, 219);
 }
 
 .users-photos__panorama {
@@ -80,7 +80,7 @@
   //padding-left: 17px;
   padding: 0;
   position: relative;
-  box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+  //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
 }
 
 .users-photos__author-name {
@@ -187,7 +187,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 28px;
-    padding-right: 0px;
+    padding-right: 0;
     padding-top: 10px;
     padding-bottom: 25px;
   }
@@ -248,7 +248,7 @@
     //padding-left: 17px;
     padding: 0;
     margin-bottom: 34px;
-    box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+    //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
   }
 
   .users-photos__item-image--panorama {
@@ -281,7 +281,7 @@
     width: 1200px;
     margin: 0 auto;
     padding-bottom: 0;
-    box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+    //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
   }
 
   .users-photos__panorama-sign {
@@ -306,6 +306,6 @@
     padding-left: 30px;
     padding-right: 20px;
     margin: 0 auto;
-    box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+    //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
   }
 }
