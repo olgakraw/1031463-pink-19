@@ -60,7 +60,7 @@
     top: 27px;
     right: 18px;
 
-    width: 26px;
+    width: 28px;
     height: 4px;
 
     background-color: #ffffff;
@@ -94,6 +94,14 @@
   .main-nav__wrapper {
     width: 660px;
   }
+
+  .main-nav__toggle {
+    top: -85px;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: -79px;
+  }
 }
 
 @media (max-width: $mobile-tablet-width-only) {
@@ -116,6 +124,7 @@
     justify-content: flex-start;
     // background-color: transparent;
     //background-color: rgba(0, 0, 0, 0.3);
+    //box-shadow: inset 0 0 0 6px rgb(252, 5, 17);
   }
 
   .main-nav {
@@ -123,6 +132,7 @@
     flex-grow: 1;
     justify-content: space-around;
     background-color: transparent;
+    //box-shadow: inset 0 0 0 6px rgb(252, 5, 17);
   }
 
   .main-nav__toggle {

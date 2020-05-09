@@ -8,11 +8,20 @@
   text-align: center;
   font-weight: 300;
   font-size: 24px;
-  line-height: normal;
+  line-height: 1.2;
   padding-right: 20px;
   padding-left: 20px;
   //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
   margin-top: 90px;
+}
+
+.page-main__title--photo {
+  margin-top: 100px;
+  //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+}
+
+.page-main__title--contest {
+  margin-top: 100px;
 }
 
 .page-main__image {
@@ -28,14 +37,14 @@
   min-height: 462px;
   //min-height: 237px;
   //background-color: $dark;
-  background: url("../img/iphone-hand-mobile@1x.png") 0% 39%, url("../img/bg-back-mobile@1x.jpg");
+  background: url("../img/iphone-hand-mobile@1x.png") 0% 40%, url("../img/bg-back-mobile@1x.jpg");
   //background-position: 95% 43%, contain;
   background-color: $dark;
   background-repeat: no-repeat;
   background-size: auto, 100%;
 
   @media (min-resolution: $retina-dppx) {
-    background: url("../img/iphone-hand-mobile@2x.png") 95% 43% auto, url("../img/bg-back-mobile@2x.jpg");
+    background: url("../img/iphone-hand-mobile@2x.png") 0% 40%, url("../img/bg-back-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-size: auto, 100%;
   }
@@ -73,20 +82,20 @@
   }
 
   .page-main__index {
-    background: url("../img/iphone-hand-tablet@1x.png") 50% 50%, url("../img/bg-back-tablet@1x.jpg");
-    background-position: center;
+    background: url("../img/iphone-hand-tablet@1x.png") 35% 100%, url("../img/bg-back-tablet@1x.jpg") center;
+    //background-position: center;
     background-repeat: no-repeat;
     background-size: auto, cover;
     //background-size: cover;
     flex-direction: row;
-    //box-shadow: inset 0 0 0 10px rgb(231, 231, 235);
+    //box-shadow: inset 0 0 0 10px rgb(9, 9, 226);
     //margin-top: -120px;//
     padding: 0;
     margin: 0;
     min-height: 729px;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/iphone-hand-tablet@2x.png") 50% 50% auto, url("../img/bg-back-tablet@2x.jpg");
+      background: url("../img/iphone-hand-tablet@2x.png") 35% 100% auto, url("../img/bg-back-tablet@2x.jpg") center;
       background-repeat: no-repeat;
       background-size: auto, cover;
     }
@@ -99,28 +108,71 @@
 
   .page-main__photo {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    min-height: 729px;
+    // margin-top: 0;
+    // box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto, cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0;
+      margin: 0;
+      min-height: 729px;
     }
   }
 
   .page-main__contest {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    min-height: 729px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto, cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0;
+      margin: 0;
+      min-height: 729px;
     }
   }
 
   .page-main__title {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 300;
+    box-sizing: border-box;
+    padding-left: 63px;
+    padding-right: 50px;
+    //padding-right: 5px;
+    //padding-right: 10px;
     //position: relative;
   }
 
+  .page-main__title--photo,
+  .page-main__title--contest {
+    font-size: 50px;
+    padding-top: 80px;
+  }
+
   .page-main__title-wrapper {
-    margin-bottom: 30px;
+    padding-top: 115px;
+    margin: 0;
+    // padding-left: 80px;
+    // padding-right: 80px;
+    //margin-bottom: 30px;
+    //box-shadow: inset 0 0 0 10px rgb(9, 9, 226);
+    //width: 50%;
   }
 }
 
@@ -130,46 +182,76 @@
   }
 
   .page-main__index {
-    background: url("../img/iphone-hand-desktop@1x.png") 50% 50%, url("../img/bg-back-desktop@1x.jpg");
+    background: url("../img/iphone-hand-desktop@1x.png") 110% bottom, url("../img/bg-back-desktop@1x.jpg") center;
     /*flex-direction: row;*/
     justify-content: flex-start;
     background-repeat: no-repeat;
-    background-size: contain auto;
-    background-position: center;
+    background-size: auto, cover;
+    min-height: 863px;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/iphone-hand-desktop@2x.png") 50% 50% auto, url("../img/bg-back-desktop@2x.jpg");
+      background: url("../img/iphone-hand-desktop@2x.png") 110% bottom, url("../img/bg-back-desktop@2x.jpg") center;
       background-repeat: no-repeat;
-      background-size: contain auto;
+      background-size: auto, cover;
     }
   }
 
   .page-main__photo {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: contain auto;
+    background-size: auto, cover;
     background-position: center;
+    min-height: 863px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: contain auto;
+      background-size: auto, cover;
       background-position: center;
+      min-height: 863px;
     }
   }
 
   .page-main__contest {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: contain auto;
+    background-size: auto, cover;
     background-position: center;
+    min-height: 863px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: auto, cover;
+      background-position: center;
+      min-height: 863px;
     }
   }
 
   .page-main__title {
+    width: 60%;
+    //box-sizing: border-box;
     font-size: 50px;
     font-weight: 300;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-top: 23px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 11px;
+    margin-left: 83px;
+    //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+  }
+
+  .page-main__title--photo {
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 325px;
+    padding-right: 305px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .page-main__title--contest {
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 213px;
+    padding-right: 200px;
+    margin-left: 0;
+    text-align: center;
   }
 }

@@ -1,8 +1,16 @@
+.copyright {
+  // padding-right: 5px;
+  // padding-top: 22px;
+  display: flex;
+  padding-bottom: 7px;
+}
+
 .copyright__text {
   font-size: 14px;
   font-weight: 400;
   text-align: left;
   color: $dark;
+  padding-right: 14px;
 }
 
 .copyright__link {
@@ -18,8 +26,32 @@
   opacity: 0.3;
 }
 
+@media (min-width: $tablet-width) {
+  .copyright {
+    //padding-right: 5px;
+    padding-right: 22px;
+    padding-top: 22px;
+    padding-bottom: 0;
+    display: flex;
+  }
+
+  .copyright__text {
+    padding-right: 12px;
+    //box-shadow: inset 0 0 0 1px rgb(231, 9, 9);
+  }
+}
+
 @media (min-width: $desktop-width) {
   .copyright__text {
     font-size: 18px;
+    padding-top: 0;
+  }
+
+  .copyright {
+    padding-right: 5px;
+    padding-top: 22px;
+    display: flex;
+    align-items: stretch;
+    //box-shadow: inset 0 0 0 1px rgb(231, 9, 9);
   }
 }

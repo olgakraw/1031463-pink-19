@@ -3,10 +3,11 @@
   line-height: 2.14;
   text-align: center;
   color: $dark;
-  padding-left: 32px;
+  padding-left: 30px;
   padding-right: 35px;
   //padding-top: 0px;
-  padding-bottom: 48px;
+  padding-bottom: 43px;
+  padding-top: 22px;
   margin: 0;
 }
 
@@ -28,8 +29,8 @@
   border: solid 3px;
   border-radius: 40px;
   width: 280px;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 13px;
   margin: 0 auto;
   margin-top: 28px;
   margin-bottom: 12px;
@@ -49,6 +50,10 @@
   color: rgba(40, 54, 69, 0.1);
   border-color: solid 3px rgba(40, 54, 69, 0.1);
   outline: none;
+  margin-top: 0;
+  margin-bottom: 33px;
+  padding-top: 13px;
+  padding-bottom: 12px;
 }
 
 .photo-download__button--upload:hover {
@@ -101,11 +106,34 @@
 .photo-download__icon-wpapper {
   display: flex;
   margin: 0 auto;
-  padding-left: 56px;
-  padding-right: 64px;
+  // padding-left: 56px;
+  // padding-right: 64px;
   padding-top: 42px;
   justify-content: space-around;
+  position: relative;
+  width: 240px;
   //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+}
+
+.photo-download__icon--crop {
+  width: 44px;
+  height: 44px;
+  padding-left: 18px;
+  // position: absolute;
+  // left: 48px;
+  // top: 39px;
+}
+
+.photo-download__icon--fill {
+  position: absolute;
+  left: 89px;
+  top: 41px;
+}
+
+.photo-download__icon--contrast {
+  position: absolute;
+  left: 176px;
+  top: 47px;
 }
 
 .photo-download__range-controls--active {
@@ -113,7 +141,7 @@
   height: 2px;
   width: 240px;
   margin-bottom: 0;
-  box-shadow: inset 0 0 0 6px rgb(34, 252, 5);
+  //box-shadow: inset 0 0 0 6px rgb(34, 252, 5);
 }
 
 .photo-download__scale--active {
@@ -149,26 +177,36 @@
   .photo-download__description {
     font-size: 18px;
     line-height: 1.67;
+    padding-top: 62px;
+    padding-bottom: 69px;
+    padding-left: 50px;
   }
 
   .photo-download__wrapper {
     display: flex;
     //width: 660px;
     margin: 0 auto;
+    padding-top: 37px;
   }
 
   .photo-download__icon-wpapper {
     flex-direction: column;
+    width: 275px;
+    padding-top: 17px;
   }
 
   .photo-download__settings-item {
     flex-direction: row;
+    align-items: center;
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
   }
 
   .photo-download__range-controls {
     position: relative;
     height: 2px;
-    width: 240px;
+    width: 202px;
     margin-bottom: 0;
     //box-shadow: inset 0 0 0 6px rgb(34, 252, 5);
   }
@@ -199,12 +237,68 @@
 
   .photo-download__icon {
     fill: $pink;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .photo-download__icon:hover {
     fill: $pink;
   }
+
+  .photo-download__icon--crop svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .photo-download__icon--fill svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .photo-download__icon--contrast svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .photo-download__icon--crop {
+    padding-left: 0;
+    padding-right: 17px;
+  }
+
+  .photo-download__icon--fill {
+    position: static;
+    padding-right: 16px;
+  }
+
+  .photo-download__icon--contrast {
+    position: static;
+    padding-right: 22px;
+  }
+
+  .photo-download__wrapper--tablet {
+    width: 330px;
+    margin-left: 5px;
+  }
+
+  .photo-download__image {
+    margin-left: 20px;
+  }
+
+  .photo-download__button {
+    width: 260px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-right: 18px;
+    //margin-bottom: 12px;
+    //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+  }
+
+  .photo-download__button--cancel {
+    margin-top: 26px;
+    margin-bottom: 40px;
+  }
+
 
   // .photo-download__icon--contrast--active path:hover {
   //   fill: $pink;
@@ -216,7 +310,80 @@
 }
 
 @media (min-width: $desktop-width) {
+  // .photo-download__wrapper--tablet {
+  //   width: 480px;
+  //   margin-left: 5px;
+  // }
+
+  .photo-download__image {
+    margin-left: 88px;
+  }
+
+  .photo-download__description {
+    padding-top: 20px;
+    padding-bottom: 68px;
+    padding-left: 52px;
+  }
+
   .photo-download__wrapper {
     width: 940px;
+    margin-bottom: 28px;
+  }
+
+  .photo-download__button-wrapper {
+    display: flex;
+    padding-right: 10px;
+    padding-left: 85px;
+    //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
+  }
+
+  .photo-download__button {
+    margin: 0;
+    margin-top: 134px;
+    margin-bottom: 46px;
+    margin-right: 44px;
+    width: 183px;
+  }
+
+  .photo-download__icon-wpapper {
+    width: 410px;
+    padding-top: 17px;
+  }
+
+  .photo-download__icon--crop svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .photo-download__icon--fill svg {
+    width: 48px;
+    height: 43px;
+  }
+
+  .photo-download__icon--contrast svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .photo-download__icon--crop {
+    padding-right: 95px;
+  }
+
+  .photo-download__icon--fill {
+    padding-right: 42px;
+  }
+
+  .photo-download__icon--contrast {
+    padding-right: 57px;
+  }
+
+  .photo-download__settings-item {
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    padding-left: 18px;
+  }
+
+  .photo-download__range-controls {
+    width: 288px;
   }
 }
