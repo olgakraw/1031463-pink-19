@@ -1,5 +1,8 @@
 .page-header {
-  background-color: rgba(0, 0, 0, 0.3);
+  //background-color: rgb(179, 179, 179);
+  //opacity: 0.3;
+  background: rgba(0, 0, 0, 0.3);
+  //filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff'); /* IE */
   color: #ffffff;
   display: flex;
   justify-content: center;
