@@ -118,6 +118,7 @@
   .contacts__map-picture {
     width: 660px;
     height: 848px;
+    //top: -50px;
   }
 
   .contacts__wrapper {
@@ -149,6 +150,10 @@
   .contacts::before {
     bottom: 305px;
   }
+  // .contacts__value-address {
+  //   padding-right: 200px;
+  //   padding-left: 200px;
+  // }
 }
 
 @media (min-width: $desktop-width) {

@@ -18,7 +18,7 @@
     //box-shadow: inset 0 0 0 6px rgb(252, 5, 17);
   }
 
-  .effect-title {
+  .effect__title {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.2;
@@ -27,6 +27,7 @@
     //padding-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 10px;
+    padding-right: 148px;
     //box-shadow: inset 0 0 0 6px rgb(252, 5, 17);
   }
 
@@ -92,7 +93,7 @@
     //box-shadow: inset 0 0 0 6px rgb(252, 5, 17);
   }
 
-  .effect-title {
+  .effect__title {
     font-size: 30px;
     font-weight: 700;
     color: #000000;
@@ -131,9 +132,5 @@
     width: 131px;
     height: 87px;
     font-size: 120px;
-  }
-
-  .effect__break {
-    display: none;
   }
 }

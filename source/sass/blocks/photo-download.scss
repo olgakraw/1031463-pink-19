@@ -6,9 +6,17 @@
   padding-left: 30px;
   padding-right: 35px;
   //padding-top: 0px;
-  padding-bottom: 43px;
-  padding-top: 22px;
+  padding-bottom: 0;
+  padding-top: 0;
   margin: 0;
+}
+
+.photo-download__description--first-paragraph {
+  padding-top: 22px;
+}
+
+.photo-download__description--second-paragraph {
+  padding-bottom: 43px;
 }
 
 .photo-download__wrapper {
@@ -118,7 +126,9 @@
 .photo-download__icon--crop {
   width: 44px;
   height: 44px;
-  padding-left: 18px;
+  margin-left: 9px;
+  padding-right: 0;
+  padding-left: 0;
   // position: absolute;
   // left: 48px;
   // top: 39px;
@@ -177,9 +187,17 @@
   .photo-download__description {
     font-size: 18px;
     line-height: 1.67;
-    padding-top: 62px;
-    padding-bottom: 69px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 50px;
+  }
+
+  .photo-download__description--first-paragraph {
+    padding-top: 62px;
+  }
+
+  .photo-download__description--second-paragraph {
+    padding-bottom: 69px;
   }
 
   .photo-download__wrapper {
@@ -320,9 +338,17 @@
   }
 
   .photo-download__description {
-    padding-top: 20px;
-    padding-bottom: 68px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 52px;
+  }
+
+  .photo-download__description--first-paragraph {
+    padding-top: 20px;
+  }
+
+  .photo-download__description--second-paragraph {
+    padding-bottom: 68px;
   }
 
   .photo-download__wrapper {
